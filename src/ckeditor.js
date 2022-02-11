@@ -18,7 +18,7 @@ export default {
 	},
 
 	props: {
-		value: {
+		modelValue: {
 			type: String,
 			default: ''
 		},
@@ -116,7 +116,7 @@ export default {
 			return config;
 		},
 		prepareComponentData() {
-			const data = this.value;
+			const data = this.modelValue;
 
 			this.instance.fire( 'lockSnapshot' );
 
@@ -147,9 +147,9 @@ export default {
 				const data = editor.getData();
 
 				// Editor#change event might be fired without an actual data change.
-				if ( this.value !== data ) {
+				if ( this.modelValue !== data ) {
 					// The compatibility with the v-model and general Vue.js concept of input–like components.
-					this.$emit( 'input', data, evt, editor );
+					this.$emit( 'update:modelValue', data, evt, editor );
 				}
 			}, this.throttle );
 
