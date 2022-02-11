@@ -1,7 +1,9 @@
 /* global Vue VueRouter CKEditor */
 /* eslint-disable */
 
-Vue.use( CKEditor );
+const app = Vue.createApp({});
+
+app.use( CKEditor );
 
 var defaultMixin = {
 	methods: {
@@ -119,14 +121,16 @@ var routes = [
 		component: DelayedCreationComponent
 	},
 	{
-		path: '*',
+		path: "/:catchAll(.*)",
 		redirect: '/types'
 	}
 ];
 
-var router = new VueRouter( { routes: routes } );
+const router = VueRouter.createRouter({
+	history: VueRouter.createWebHistory(),
+	routes,
+});
 
-new Vue( {
-	el: '#app',
-	router: router
-} );
+app.use(router);
+
+app.mount('#app');

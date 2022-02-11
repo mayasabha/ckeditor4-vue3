@@ -1,5 +1,5 @@
 {
-	"name": "ckeditor4-vue",
+	"name": "@mayasabha/ckeditor4-vue3",
 	"version": "1.5.1",
 	"main": "dist/ckeditor.js",
 	"files": [
@@ -9,7 +9,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.14.8",
 		"@babel/preset-env": "^7.14.8",
-		"@vue/test-utils": "^1.0.4",
+		"@vue/test-utils": "^2.0.0-rc.17",
 		"babel-loader": "^8.2.2",
 		"chai": "^4.3.4",
 		"core-js": "^3.16.0",
@@ -33,14 +33,14 @@
 		"mocha": "^9.0.3",
 		"sinon": "^9.2.4",
 		"terser-webpack-plugin": "^4.2.2",
-		"vue": "^2.6.14",
-		"vue-router": "^3.4.9",
+		"vue": "^3.2.30",
+		"vue-router": "^4.0.12",
 		"vue-template-compiler": "^2.6.14",
 		"webpack": "^4.20.2",
 		"webpack-cli": "^4.7.2"
 	},
 	"peerDependencies": {
-		"vue": "^2.5.17"
+		"vue": "^3.2.30"
 	},
 	"dependencies": {
 		"ckeditor4-integrations-common": "^1.0.0"

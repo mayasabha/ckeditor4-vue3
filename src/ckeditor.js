@@ -5,14 +5,15 @@
 
 /* global CKEDITOR */
 
+import { h } from 'vue';
 import { debounce, getEditorNamespace } from 'ckeditor4-integrations-common';
 
 export default {
 	name: 'ckeditor',
 
-	render( createElement ) {
-		return createElement( 'div', {}, [
-			createElement( this.tagName )
+	render(  ) {
+		return h( 'div', {}, [
+			h( this.tagName ),
 		] );
 	},
 
