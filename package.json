@@ -77,7 +77,7 @@
 		"ckeditor4",
 		"ckeditor 4"
 	],
-	"author": "CKSource (http://cksource.com/)",
+	"author": "Mayasabha (https://apoorvpal.in/)",
 	"license": "(GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1-or-later)",
 	"bugs": {
 		"url": "https://github.com/mayasabha/ckeditor4-vue3/issues"

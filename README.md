@@ -1,18 +1,8 @@
-# CKEditor 4 WYSIWYG editor component for Vue.js [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20CKEditor%204%20Vue%20integration&url=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fckeditor4-vue)
+# CKEditor 4 WYSIWYG editor component for Vue.js v3
 
-[![npm version](https://badge.fury.io/js/ckeditor4-vue.svg)](https://www.npmjs.com/package/ckeditor4-vue)
-[![GitHub tag](https://img.shields.io/github/tag/ckeditor/ckeditor4-vue.svg)](https://github.com/ckeditor/ckeditor4-vue)
+![Mayasabha Logo ><](https://apoorvpal.in/img/logo-new.svg =256x256)
 
-[![Build Status](https://travis-ci.org/ckeditor/ckeditor4-vue.svg?branch=master)](https://travis-ci.org/ckeditor/ckeditor4-vue)
-[![Dependency Status](https://david-dm.org/ckeditor/ckeditor4-vue/status.svg)](https://david-dm.org/ckeditor/ckeditor4-vue)
-[![devDependency Status](https://david-dm.org/ckeditor/ckeditor4-vue/dev-status.svg)](https://david-dm.org/ckeditor/ckeditor4-vue?type=dev)
-
-[![Join newsletter](https://img.shields.io/badge/join-newsletter-00cc99.svg)](http://eepurl.com/c3zRPr)
-[![Follow Twitter](https://img.shields.io/badge/follow-twitter-00cc99.svg)](https://twitter.com/ckeditor)
-
-The official [CKEditor 4](https://ckeditor.com/ckeditor-4/) WYSIWYG editor component for Vue.js.
-
-We are looking forward to your feedback! You can report any issues, ideas or feature requests on the [integration issues page](https://github.com/ckeditor/ckeditor4-vue/issues/new).
+The adapted CKEditor 4 WYSIWYG editor component for Vue.js v3.
 
 ![CKEditor 4 screenshot](https://c.cksource.com/a/1/img/npm/ckeditor4.png)
 
@@ -21,7 +11,7 @@ We are looking forward to your feedback! You can report any issues, ideas or fea
 To install the CKEditor 4 component for Vue.js from npm, simply run:
 
 ```
-npm install ckeditor4-vue
+npm install @mayasabha/ckeditor4-vue3
 ```
 
 Then use it by calling the `Vue.use()` method:
@@ -30,7 +20,8 @@ Then use it by calling the `Vue.use()` method:
 import Vue from 'vue';
 import CKEditor from 'ckeditor4-vue';
 
-Vue.use( CKEditor );
+const app = Vue.createApp({});
+app.use( CKEditor );
 
 new Vue( {
 	// ... options
@@ -50,13 +41,13 @@ And use the `<ckeditor />` component in your template:
 Instead of using ES6 imports, the component can also be added via a direct script include:
 
 ```html
-<script src="../node_modules/ckeditor4-vue/dist/ckeditor.js"></script>
+<script src="../node_modules/@mayasabha/ckeditor4-vue3/dist/ckeditor.js"></script>
 ```
 
 and used in the same way as with ES6 imports:
 
 ```js
-Vue.use( CKEditor );
+app.use( CKEditor );
 ```
 
 Refer to the official [CKEditor 4 Vue component documentation](http://ckeditor.com/docs/ckeditor4/latest/guide/dev_vue.html#basic-usage) for more information about the installation process.
