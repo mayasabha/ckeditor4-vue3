@@ -1,7 +1,7 @@
 # CKEditor 4 WYSIWYG editor component for Vue.js v3
 
 <div align="center">
-	<img src="https://apoorvpal.in/img/logo-new.svg" style="height: 128px; width: 128px;" alt="Mayasabha Logo" />
+	<img src="https://apoorvpal.in/img/logo-m.svg" style="height: 128px; width: 128px;" alt="Mayasabha Logo" />
 </div>
 
 The adapted CKEditor 4 WYSIWYG editor component for Vue.js v3.
