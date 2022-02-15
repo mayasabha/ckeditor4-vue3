@@ -74,7 +74,7 @@ export default {
 	},
 
 	watch: {
-		value( val ) {
+		modelValue( val ) {
 			if ( this.instance && this.instance.getData() !== val ) {
 				this.instance.setData( val );
 			}
@@ -132,7 +132,7 @@ export default {
 						this.$emit( 'ready', this.instance );
 					} );
 
-					this.$emit( 'input', newData );
+					this.$emit( 'update:modelValue', newData );
 				} else {
 					this.$emit( 'ready', this.instance );
 				}
