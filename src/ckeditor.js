@@ -11,9 +11,9 @@ import { debounce, getEditorNamespace } from 'ckeditor4-integrations-common';
 export default {
 	name: 'ckeditor',
 
-	render(  ) {
+	render() {
 		return h( 'div', {}, [
-			h( this.tagName ),
+			h( this.tagName )
 		] );
 	},
 
@@ -128,9 +128,9 @@ export default {
 				// Locking the snapshot prevents the 'change' event.
 				// Trigger it manually to update the bound data.
 				if ( data !== newData ) {
-					this.$once( 'input', () => {
+					/* this.$on( 'input', () => {
 						this.$emit( 'ready', this.instance );
-					} );
+					} ); */
 
 					this.$emit( 'update:modelValue', newData );
 				} else {

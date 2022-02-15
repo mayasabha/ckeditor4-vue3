@@ -1,7 +1,7 @@
 # CKEditor 4 WYSIWYG editor component for Vue.js v3
 
 <div align="center">
-	<img src="https://apoorvpal.in/img/logo-new.svg" style="height: 128px; width: 128px;" alt="Mayasabha Logo" />
+	<img src="https://apoorvpal.in/img/logo-m.svg" style="height: 128px; width: 128px;" alt="Mayasabha Logo" />
 </div>
 
 The adapted CKEditor 4 WYSIWYG editor component for Vue.js v3.
@@ -20,7 +20,7 @@ Then use it by calling the `Vue.use()` method:
 
 ```js
 import Vue from 'vue';
-import CKEditor from 'ckeditor4-vue';
+import CKEditor from '@mayasabha/ckeditor4-vue3';
 
 const app = Vue.createApp({});
 app.use( CKEditor );
@@ -67,7 +67,7 @@ The CKEditor 4 Vue component works with all the [supported browsers](https://cke
 To enable Internet Explorer 11 support, instead of the standard import you need to import a specific `dist/legacy.js` file containing all required polyfills:
 
 ```js
-import CKEditor from 'ckeditor4-vue/dist/legacy.js'
+import CKEditor from '@mayasabha/ckeditor4-vue3/dist/legacy.js'
 ```
 
 **Note**: Even though CKEditor 4 supports older Internet Explorer versions including IE8, IE9 and IE10, the Vue integration is only supported in the latest Internet Explorer 11.
