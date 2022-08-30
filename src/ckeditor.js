@@ -65,6 +65,12 @@ export default {
 		} );
 	},
 
+	data() {
+		return {
+			readyEmitted: false,
+		};
+	},
+
 	beforeDestroy() {
 		if ( this.instance ) {
 			this.instance.destroy();
@@ -131,10 +137,18 @@ export default {
 					/* this.$on( 'input', () => {
 						this.$emit( 'ready', this.instance );
 					} ); */
-
+					if (!this.readyEmitted) {
+						this.$emit( 'ready', this.instance );
+						console.log('Emitting Ready');
+						this.readyEmitted = true;
+					}
 					this.$emit( 'update:modelValue', newData );
 				} else {
-					this.$emit( 'ready', this.instance );
+					if (!this.readyEmitted) {
+						this.$emit( 'ready', this.instance );
+						console.log('Emitting Ready');
+						this.readyEmitted = true;
+					}
 				}
 
 				this.instance.fire( 'unlockSnapshot' );
