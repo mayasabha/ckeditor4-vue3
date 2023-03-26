@@ -139,14 +139,14 @@ export default {
 					} ); */
 					if (!this.readyEmitted) {
 						this.$emit( 'ready', this.instance );
-						console.log('Emitting Ready');
+						// console.log('Emitting Ready');
 						this.readyEmitted = true;
 					}
 					this.$emit( 'update:modelValue', newData );
 				} else {
 					if (!this.readyEmitted) {
 						this.$emit( 'ready', this.instance );
-						console.log('Emitting Ready');
+						// console.log('Emitting Ready');
 						this.readyEmitted = true;
 					}
 				}
