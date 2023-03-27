@@ -85,6 +85,10 @@ function createConfig( filename, presets = [], polyfills = [] ) {
 					}
 				}
 			]
-		}
+		},
+
+		externals: {
+			vue: 'Vue',
+		},
 	};
 }
