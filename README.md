@@ -1,22 +1,32 @@
 # CKEditor 4 WYSIWYG editor component for Vue.js v3
 
-<div align="center">
-	<img src="https://apoorvpal.in/img/logo-m.svg" style="height: 128px; width: 128px;" alt="Mayasabha Logo" />
-</div>
+![Mayasabha Logo](https://apoorvpal.in/img/logo-m.png)
 
-The adapted CKEditor 4 WYSIWYG editor component for Vue.js v3.
+The CKEditor 4 WYSIWYG editor component for Vue.js v3.
 
 ![CKEditor 4 screenshot](https://c.cksource.com/a/1/img/npm/ckeditor4.png)
 
-## Installation and usage
+## Installation and Usage
 
 To install the CKEditor 4 component for Vue.js from npm, simply run:
 
-```
+```bash
 npm install @mayasabha/ckeditor4-vue3
 ```
 
-Then use it by calling the `Vue.use()` method:
+### Use in Single File Components
+```Vue
+<script setup>
+	import { component as ckeditor } from '@mayasabha/ckeditor4-vue3'
+</script>
+
+<template>
+	<ckeditor></ckeditor>
+</template>
+```
+
+### Use as a Global Plugin
+Call the `Vue.use()` method to register `CKEditor` as a global plugin for Vue:
 
 ```js
 import Vue from 'vue';
@@ -32,7 +42,7 @@ new Vue( {
 
 And use the `<ckeditor />` component in your template:
 
-```html
+```Vue
 <template>
 	<div id="app">
 		<ckeditor value="Hello, World!"></ckeditor>
@@ -40,6 +50,7 @@ And use the `<ckeditor />` component in your template:
 </template>
 ```
 
+### Use via Direct `<script>` Tag 
 Instead of using ES6 imports, the component can also be added via a direct script include:
 
 ```html
