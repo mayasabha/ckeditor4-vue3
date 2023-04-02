@@ -1,10 +1,10 @@
 {
 	"name": "@mayasabha/ckeditor4-vue3",
-	"version": "0.0.9",
+	"version": "1.0.0",
 	"main": "dist/ckeditor.js",
+	"description": "Vue.js 3+ component for CKEditor 5 - the best browser-based rich text editor. Developed and maintained by Mayasabha.",
 	"files": [
-		"dist/",
-		"samples/"
+		"dist/"
 	],
 	"devDependencies": {
 		"@babel/core": "^7.21.3",
@@ -72,6 +72,9 @@
 		"contentEditable",
 		"editing",
 		"vue",
+		"vue.js",
+		"vue component",
+		"vue.js component",
 		"component",
 		"ckeditor",
 		"ckeditor4",
