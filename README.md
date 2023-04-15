@@ -1,10 +1,8 @@
 # CKEditor 4 WYSIWYG editor component for Vue.js v3
 
-![Mayasabha Logo](https://apoorvpal.in/img/logo-m.png)
+![Mayasabha CKEditor 4 Vue 3 Component](https://apoorvpal.in/assets/img/packages/js/ckeditor4-vue3/ckeditor4-vue3.png)
 
 The CKEditor 4 WYSIWYG editor component for Vue.js v3.
-
-![CKEditor 4 screenshot](https://c.cksource.com/a/1/img/npm/ckeditor4.png)
 
 ## Installation and Usage
 
@@ -66,6 +64,8 @@ app.use( CKEditor );
 Refer to the official [CKEditor 4 Vue component documentation](http://ckeditor.com/docs/ckeditor4/latest/guide/dev_vue.html#basic-usage) for more information about the installation process.
 
 ## Documentation and examples
+
+![CKEditor 4 screenshot](https://c.cksource.com/a/1/img/npm/ckeditor4.png)
 
 See the [CKEditor 4 WYSIWYG Editor Vue Integration](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_vue.html) article in the [CKEditor 4 documentation](https://ckeditor.com/docs/ckeditor4/latest).
 
