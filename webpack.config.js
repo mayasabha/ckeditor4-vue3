@@ -52,7 +52,6 @@ function createConfig( filename, presets = [], polyfills = [] ) {
 		optimization: {
 			minimizer: [
 				new TerserWebpackPlugin( {
-					sourceMap: true,
 					terserOptions: {
 						output: {
 							// Preserve license comments.
@@ -77,12 +76,13 @@ function createConfig( filename, presets = [], polyfills = [] ) {
 			rules: [
 				{
 					test: /\.js$/,
-					loader: 'babel-loader',
+					use: {
+						loader: 'babel-loader',
+						options: {
+							presets: ['@babel/preset-env'],
+						},
+					},
 					exclude: /node_modules/,
-					query: {
-						compact: false,
-						presets
-					}
 				}
 			]
 		},
