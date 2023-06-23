@@ -7,11 +7,11 @@
 
 /* eslint-env node */
 
-const path = require( 'path' );
-const webpack = require( 'webpack' );
-const TerserWebpackPlugin = require( 'terser-webpack-plugin' );
+import * as path from 'path';
+import webpack from 'webpack';
+import TerserWebpackPlugin from 'terser-webpack-plugin';
 
-module.exports = [
+export default [
 	createConfig( 'ckeditor.js' ),
 	createConfig( 'legacy.js', [
 		[ '@babel/preset-env',
@@ -39,12 +39,12 @@ function createConfig( filename, presets = [], polyfills = [] ) {
 			hints: false
 		},
 
-		entry: [ ...polyfills, path.join( __dirname, 'src', 'index.js' ) ],
+		entry: [ ...polyfills, path.resolve( './', 'src', 'index.js' ) ],
 
 		output: {
 			filename,
 			library: 'CKEditor',
-			path: path.join( __dirname, 'dist' ),
+			path: path.resolve( './', 'dist' ),
 			libraryTarget: 'umd',
 			libraryExport: 'default'
 		},
