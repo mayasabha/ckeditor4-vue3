@@ -6,6 +6,7 @@
 	"files": [
 		"dist/"
 	],
+	"type": "module",
 	"devDependencies": {
 		"@babel/core": "^7.22.5",
 		"@babel/preset-env": "^7.22.5",
