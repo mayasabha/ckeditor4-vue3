@@ -60,9 +60,11 @@ export default {
 			const config = this.prepareConfig();
 			const method = this.type === 'inline' ? 'inline' : 'replace';
 			const element = this.$el.firstElementChild;
-
+			
 			CKEDITOR[ method ]( element, config );
-		} );
+		} ).catch((err) => {
+			console.log("[ckeditor.js] Error while loading namespace from integrations package", err);
+		});
 	},
 
 	data() {
