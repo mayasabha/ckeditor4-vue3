@@ -29,7 +29,7 @@ export default {
 		},
 		editorUrl: {
 			type: String,
-			default: 'https://cdn.ckeditor.com/4.17.2/standard-all/ckeditor.js'
+			default: 'https://cdn.ckeditor.com/4.22.1/standard-all/ckeditor.js'
 		},
 		config: {
 			type: Object,
@@ -60,7 +60,7 @@ export default {
 			const config = this.prepareConfig();
 			const method = this.type === 'inline' ? 'inline' : 'replace';
 			const element = this.$el.firstElementChild;
-			
+
 			CKEDITOR[ method ]( element, config );
 		} ).catch((err) => {
 			console.log("[ckeditor.js] Error while loading namespace from integrations package", err);
