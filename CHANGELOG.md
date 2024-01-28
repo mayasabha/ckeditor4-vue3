@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7] - 2024-01-28
+
+### Fixed
+
+- Allow multiple editors with the same editorConfig
+
 ## [1.0.6] - 2023-12-31
 
-### Changes
+### Changed
 
 - Switched to CKEditor v4.22.1 for the default editor URL.
 - Updated JS dependencies

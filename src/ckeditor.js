@@ -97,7 +97,7 @@ export default {
 
 	methods: {
 		prepareConfig() {
-			const config = this.config || {};
+			const config = this.config ? {...this.config} : {};
 			config.on = config.on || {};
 
 			if ( config.delayIfDetached === undefined ) {
