@@ -107,6 +107,11 @@ export default {
 				config.readOnly = this.readOnly;
 			}
 
+			// disable the alert for EOL of CKEditor 4 Free Editions
+			if (!config.hasOwnProperty('versionCheck')) {
+				config.versionCheck = false;
+			}
+
 			const userInstanceReadyCallback = config.on.instanceReady;
 
 			config.on.instanceReady = evt => {
