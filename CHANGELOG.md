@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.8] - 2024-02-09
+
+## Changed
+
+- Updated JS dependencies
+
+### Fixed
+
+- Disable version check by default, unless explicitly specified to prevent CKEditor 4 EOL alert
+
 ## [1.0.7] - 2024-01-28
 
 ### Fixed
